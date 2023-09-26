@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+
+}
+
+
+body {
+  width: 100%;
+  /* position: relative; */
+  background-color: black;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+/* nav{
+
+  position: fixed;
+  top: 0;
+  left: 100rem;
+  width: fit-content;
+  height: 3vw;
+  backdrop-filter: blur(900px);
+  border-radius: 0.5vw;
+  box-shadow: 1px 1px 10px rgb(185, 182, 182);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 6vw;
+  gap: 2.5vw;
+  overflow: hidden;
+  z-index: 99;
+  
+} */
+
+nav {
+  position: fixed; /* Set the position to fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3vw;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 6vw;
+  gap: 2.5vw;
+  overflow: hidden;
+  z-index: 99;
+}
+
+
+nav a{
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+  transform: translateZ(-10px) scale(2) translateY(-112px);
+}
+
+section {
+  font-size: 2vw;
+  padding: 2rem;
+  padding-top: 8rem;
+  background-color: #f6f7e6;
+  color: black;
+  border-radius: 40px;
+  /* height: 200vh; */
+}
+
+.cardWrapper{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3vw 5vw;
+  padding-top: 8rem;
+  max-width: 90%;
+  /* position: relative; */
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+}
+
+.card{
+  font-size: 1.5rem;
+  /* opacity: 60%; */
+  width: 22rem;
+  /* max-height: 30rem; */
+  /* border: 1px solid black; */
+  box-shadow: 1px 1px 9px;
+  border-radius: 10px;
+  /* padding: 3rem 5rem; */
+  /* overflow: hidden; */
+  transition: transform .5s, box-shadow .8s;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+
+.card-img{
+  width: 100rem;
+  height: 15rem;
+  /* object-fit: cover; */
+  overflow: hidden;
+  /* margin-top: 1rem; */
+  transition: transform 1s;
+  background-color: #f6f7e6;
+  /* background-color: #333; */
+  
+}
+
+.spices-img{
+  position: relative;
+  width: 23rem;
+  height: auto;
+}
+
+.dairy-img{
+  position: relative;
+  width: 28rem;
+  height: auto;
+ 
+}
+
+.bakery-img{
+  position: relative;
+  width: 30rem;
+  height: auto;
+  /* top: rem;
+  left: 0px; */
+}
+
+.poultry-img{
+  position: relative;
+  width: 24rem;
+  height: auto;
+  /* top: rem;
+  left: 0px; */
+}
+
+.walnut-img{
+  position: relative;
+  width: 24rem;
+  height: auto;
+  top: -16rem;
+  /* left: 0px; */
+}
+
+.mushroom-img{
+  position: relative;
+  width: 24rem;
+  height: auto;
+  top: -16rem;
+  left: -1rem;
+}
+
+
+
+.card-img:hover{
+ transform: scale(1.01);
+}
+
+.desc{
+  opacity: 60%;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+
+.jammu-product-title{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #414235;
+  font-size: 3rem;
+
+}
+
+.card:hover{
+  transform: scale(1.01);
+  box-shadow: 1px 1px 18px;
+}
+
+
+.card h3{
+  opacity: 80%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.card .desc{
+  padding-left: 1rem;
+  padding-bottom: 2rem; 
+  margin-top: 1rem;
+}
