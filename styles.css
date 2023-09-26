@@ -20,35 +20,17 @@ body {
   perspective: 10px;
 }
 
-/* nav{
-
-  position: fixed;
-  top: 0;
-  left: 100rem;
-  width: fit-content;
-  height: 3vw;
-  backdrop-filter: blur(900px);
-  border-radius: 0.5vw;
-  box-shadow: 1px 1px 10px rgb(185, 182, 182);
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 6vw;
-  gap: 2.5vw;
-  overflow: hidden;
-  z-index: 99;
-  
-} */
 
 nav {
-  position: fixed; /* Set the position to fixed */
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
   height: 3vw;
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 0.5vw;
+  background-color: rgba(80, 77, 77, 0.247);
+  border-radius: 1.2vw;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -59,9 +41,10 @@ nav {
 }
 
 
+
 nav a{
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-decoration: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -94,7 +77,7 @@ header {
 }
 
 .title {
-  font-size: 7rem;
+  font-size: 6vw;
   color: white;
   text-shadow: 0 0 5px black;
   transform: translateZ(-10px) scale(2) translateY(-112px);
